@@ -1,61 +1,113 @@
-🖥️ Active Directory Home Lab
-A hands-on home lab simulating an enterprise IT environment using Oracle VirtualBox and Windows Server 2019. This project documents the full setup process from VM creation to a fully configured Active Directory domain — with user management via PowerShell coming next.
+# 🖥️ Active Directory Home Lab
 
-🎯 Objective
-Build and document an enterprise-style Active Directory environment to practice domain administration, user provisioning, and PowerShell automation — skills directly applicable to SOC Analyst and IT Administrator roles.
+A hands-on home lab simulating an enterprise IT environment using **Oracle VirtualBox**, **Windows Server 2019**, and **Windows 11**. This project documents the full setup process—from virtual machine creation to building a domain environment with a server and client system.
 
-🧰 Tools & Technologies
-ToolPurposeOracle VirtualBox 7.2.6Hypervisor / virtualization platformWindows Server 2019 (Evaluation)Domain Controller OSWindows 10 22H2Client machine (coming soon)Active Directory Domain ServicesDirectory and identity managementPowerShellUser automation (in progress)
+This lab consists of a **Windows Server 2019 Domain Controller** and a **Windows 11 client machine** designed to be joined to the domain.
 
+---
 
-## Lab Progress
-- [x] Windows Server installed on VirtualBox
-- [x] Administrator account configured
-- [ ] Active Directory Domain Services installed
-- [ ] Domain created and configured
-- [ ] Client VM joined to domain
-- [ ] Users created via PowerShell
+## 🎯 Objective
 
-🗂️ Setup Walkthrough
-Step 1 — Download Oracle VirtualBox
-Downloaded VirtualBox 7.2.6 for Windows from the official VirtualBox website.
-![Active Directory Lab](Lab%201.PNG)
-Step 2 — Download Windows 10 ISO
-Downloaded Windows 10 Version 22H2 from Microsoft's official download page to use as the client machine OS.
-![Lab 2](lab%202.PNG)
+Build and document an enterprise-style Active Directory environment to develop practical skills in:
 
-Step 3 — Download Windows Server 2019 ISO
-Downloaded the Windows Server 2019 Standard Evaluation ISO (64-bit) from the Microsoft Evaluation Center.
-![Lab 3](lab%203.PNG)
+- Domain administration  
+- User provisioning  
+- Virtualization  
+- PowerShell automation (upcoming)  
 
-Step 4 — Create the Domain Controller VM
-Created a new VM in VirtualBox named "DC" (Domain Controller), set OS to Microsoft Windows.
-![Lab 4](lab%204.PNG)
+These skills are directly applicable to **SOC Analyst** and **IT Administrator** roles.
 
-Step 5 — Configure VM Hardware
-Allocated 2048MB RAM, 1 CPU, and 20GB disk for the Domain Controller VM.
-![Lab 5](lab%205.PNG)
+---
 
-Step 6 — Configure Internal Network Adapter
-Set Adapter 2 to Internal Network (intnet) so the DC can communicate with client VMs on an isolated network.
-![Lab 7](lab%207.PNG)
+## 🧰 Tools & Technologies
 
-Step 7 — Install Windows Server 2019
-Mounted the ISO and ran the Windows Server 2019 installation inside VirtualBox.
-![Lab 9](lab%209.PNG)
+| Tool | Purpose |
+|------|--------|
+| Oracle VirtualBox 7.2.6 | Hypervisor / virtualization platform |
+| Windows 11 (x64) | Domain Controller OS |
+| Active Directory Domain Services (AD DS) | Directory and identity management |
+| PowerShell | Automation (in progress) |
 
-Step 8 — Configure Administrator Account
-Set up the built-in Administrator account with a secure password during the post-install setup.
-![Lab 10](lab%2010.PNG)
+---
 
-Step 9 — Windows Server 2019 Live ✅
-Windows Server 2019 Standard Evaluation is fully installed and running in VirtualBox.
-![Lab 11](lab%2011.PNG)
+## 📊 Lab Progress
 
-🔜 Coming Next
+- [x] VirtualBox installed and configured  
+- [x] Windows Server 2019 VM created  
+- [x] Windows 11 client VM created  
+- [x] Windows 11 installation completed  
+- [ ] Active Directory Domain Services installed  
+- [ ] Domain created and configured  
+- [ ] Client joined to domain  
+- [ ] Users created via PowerShell  
 
-Install AD DS role and promote to Domain Controller
-Configure DNS and DHCP
-Create Organizational Units (OUs)
-Automate bulk user creation with PowerShell
-Join a Windows 10 client to the domain
+---
+
+## 🖥️ Domain Controller Setup (Windows Server 2019)
+
+*(Initial setup completed — AD DS configuration coming next)*
+
+- Created Domain Controller VM  
+- Installed Windows Server 2019  
+- Configured Administrator account  
+- Verified system functionality  
+
+---
+
+## 💻 Client Machine Setup (Windows 11)
+
+### Step 1 — Download Oracle VirtualBox
+Downloaded **VirtualBox 7.2.6** from the official VirtualBox website.
+
+![Step 1](lab%201.PNG)
+
+---
+
+### Step 2 — Download Windows 11 ISO
+Downloaded the **Windows 11 (x64) ISO** from Microsoft’s official website.
+
+![Step 2](lab%202.PNG)
+
+---
+
+### Step 3 — Create Windows 11 Client Virtual Machine
+Created a new virtual machine named **admin**, attached the Windows 11 ISO, and selected the appropriate OS version.
+
+![Step 3](lab%203.PNG)
+
+---
+
+### Step 4 — Configure User Credentials
+During installation, created a local user account by defining a username and secure password.
+
+![Step 4](lab%204.PNG)
+
+---
+
+### Step 5 — Windows 11 Installation Complete ✅
+Windows 11 installation completed successfully and the virtual machine is fully operational.
+
+![Step 5](lab%205.PNG)
+
+---
+
+## 🔜 Coming Next
+
+- Install **Active Directory Domain Services (AD DS)**  
+- Promote server to **Domain Controller**  
+- Configure **DNS and DHCP**  
+- Create **Organizational Units (OUs)**  
+- Join Windows 11 client to the domain  
+- Automate bulk user creation with **PowerShell**  
+
+---
+
+## 🚀 Key Skills Demonstrated
+
+- Virtualization using Oracle VirtualBox  
+- Windows Server & Windows 11 deployment  
+- System configuration and setup  
+- Client/server architecture understanding  
+- Enterprise environment simulation  
+
+---
