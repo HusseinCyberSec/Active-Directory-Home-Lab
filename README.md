@@ -1,8 +1,8 @@
 # 🖥️ Active Directory Home Lab
 
-A hands-on home lab simulating an enterprise IT environment using **Oracle VirtualBox**, **Windows Server 2022**, and **Windows 11**. This project documents the step-by-step process of building a domain environment from scratch.
+A hands-on home lab simulating an enterprise IT environment using **Oracle VirtualBox**, **Windows Server 2022**, and **Windows 11**. This project documents the full process of building an Active Directory domain from scratch, including server configuration, domain controller promotion, and client setup.
 
-This lab will consist of a **Windows Server 2022 Domain Controller** and a **Windows 11 client machine** joined to the domain.
+This lab consists of a **Windows Server 2022 Domain Controller** and a **Windows 11 client machine** joined to the domain.
 
 ---
 
@@ -12,7 +12,7 @@ Build and document an enterprise-style Active Directory environment to develop p
 
 - Domain administration  
 - User provisioning  
-- Virtualization  
+- Network configuration  
 - PowerShell automation  
 
 These skills are directly applicable to **SOC Analyst** and **IT Administrator** roles.
@@ -24,10 +24,10 @@ These skills are directly applicable to **SOC Analyst** and **IT Administrator**
 | Tool | Purpose |
 |------|--------|
 | Oracle VirtualBox 7.2.6 | Hypervisor / virtualization platform |
-| Windows Server 2022 | Domain Controller OS (in progress) |
+| Windows Server 2022 | Domain Controller OS |
 | Windows 11 (x64) | Client machine |
 | Active Directory Domain Services (AD DS) | Directory and identity management |
-| PowerShell | Automation (planned) |
+| PowerShell | Automation |
 
 ---
 
@@ -35,10 +35,11 @@ These skills are directly applicable to **SOC Analyst** and **IT Administrator**
 
 - [x] VirtualBox installed and configured  
 - [x] Windows 11 client VM created  
-- [x] Windows 11 installation completed  
-- [ ] Windows Server 2022 VM setup (in progress)  
-- [ ] Active Directory Domain Services installed  
-- [ ] Domain created and configured  
+- [x] Windows Server 2022 VM created  
+- [x] Static IP configured on server  
+- [x] Active Directory Domain Services installed  
+- [x] Server promoted to Domain Controller  
+- [x] Domain successfully configured  
 - [ ] Client joined to domain  
 - [ ] Users created via PowerShell  
 
@@ -47,71 +48,91 @@ These skills are directly applicable to **SOC Analyst** and **IT Administrator**
 ## 💻 Client Machine Setup (Windows 11)
 
 ### Step 1 — Download Oracle VirtualBox
-Downloaded **VirtualBox 7.2.6** from the official VirtualBox website.
-
 ![Step 1](https://github.com/HusseinCyberSec/Active-Directory-Home-Lab/blob/35fdfb2e38cc74c5980233d338934c62c00f2987/Lab_Pictures/lab%201.PNG)
 
 ---
 
 ### Step 2 — Download Windows 11 ISO
-Downloaded the **Windows 11 (x64) ISO** from Microsoft’s official website.
-
 ![Step 2](https://github.com/HusseinCyberSec/Active-Directory-Home-Lab/blob/35fdfb2e38cc74c5980233d338934c62c00f2987/Lab_Pictures/lab%202.PNG)
 
 ---
 
 ### Step 3 — Create Windows 11 Client Virtual Machine
-Created a new virtual machine named **admin**, attached the Windows 11 ISO, and selected the appropriate OS version.
-
 ![Step 3](https://github.com/HusseinCyberSec/Active-Directory-Home-Lab/blob/35fdfb2e38cc74c5980233d338934c62c00f2987/Lab_Pictures/lab%203.PNG)
 
 ---
 
 ### Step 4 — Configure User Credentials
-During installation, created a local user account by defining a username and secure password.
-
 ![Step 4](https://github.com/HusseinCyberSec/Active-Directory-Home-Lab/blob/35fdfb2e38cc74c5980233d338934c62c00f2987/Lab_Pictures/lab%204.PNG)
 
 ---
 
 ### Step 5 — Windows 11 Installation Complete ✅
-Windows 11 installation completed successfully and the virtual machine is fully operational.
-
 ![Step 5](https://github.com/HusseinCyberSec/Active-Directory-Home-Lab/blob/35fdfb2e38cc74c5980233d338934c62c00f2987/Lab_Pictures/lab%205.PNG)
 
 ---
 
 ## 🖥️ Domain Controller Setup (Windows Server 2022)
 
-*(Currently in progress — setup steps will be documented next)*
+### Step 6 — Download Windows Server 2022
+![Step 6](https://github.com/HusseinCyberSec/Active-Directory-Home-Lab/blob/main/Lab_Pictures/lab%206.PNG)
 
-Planned steps:
+---
 
-- Create Windows Server 2022 VM  
-- Install Windows Server 2022  
-- Configure Administrator account  
-- Install Active Directory Domain Services (AD DS)  
-- Promote to Domain Controller  
+### Step 7 — Create Server VM & Attach ISO
+![Step 7](https://github.com/HusseinCyberSec/Active-Directory-Home-Lab/blob/main/Lab_Pictures/lab%207.PNG)
+
+---
+
+### Step 8 — Windows Server Installation Complete
+![Step 8](https://github.com/HusseinCyberSec/Active-Directory-Home-Lab/blob/main/Lab_Pictures/lab%208.PNG)
+
+---
+
+### Step 9 — Configure Static IP Address
+Configured a static IP address for the server using Command Prompt to ensure stable domain services.
+
+![Step 9](https://github.com/HusseinCyberSec/Active-Directory-Home-Lab/blob/main/Lab_Pictures/lab%209.PNG)
+
+---
+
+### Step 10 — Install Active Directory Domain Services
+Installed the **AD DS role** via Server Manager.
+
+![Step 10](https://github.com/HusseinCyberSec/Active-Directory-Home-Lab/blob/main/Lab_Pictures/lab%2010.PNG)
+
+---
+
+### Step 11 — Promote Server to Domain Controller
+Promoted the server to a Domain Controller and created a new domain.
+
+![Step 11](https://github.com/HusseinCyberSec/Active-Directory-Home-Lab/blob/main/Lab_Pictures/lab%2011.PNG)
+
+---
+
+### Step 12 — Domain Controller Setup Complete ✅
+Successfully logged into the domain controller after full configuration.
+
+![Step 12](https://github.com/HusseinCyberSec/Active-Directory-Home-Lab/blob/1ddec2ace37bda602f18d20d418546080908f8b8/Lab_Pictures/lab%2012.PNG)
 
 ---
 
 ## 🔜 Coming Next
 
-- Complete Windows Server 2022 installation  
-- Install **Active Directory Domain Services (AD DS)**  
-- Promote server to **Domain Controller**  
-- Configure **DNS and DHCP**  
 - Join Windows 11 client to the domain  
-- Automate bulk user creation with **PowerShell**  
+- Create Organizational Units (OUs)  
+- Automate user creation with **PowerShell**  
+- Simulate enterprise user management  
 
 ---
 
 ## 🚀 Key Skills Demonstrated
 
+- Active Directory Domain Services (AD DS) deployment  
+- Domain Controller configuration (Windows Server 2022)  
+- Static IP and network configuration  
 - Virtualization using Oracle VirtualBox  
-- Windows 11 system deployment  
-- System configuration and setup  
-- Understanding of client/server architecture  
-- Enterprise lab environment design  
+- Windows 11 & Server environment setup  
+- Enterprise infrastructure simulation  
 
 ---
