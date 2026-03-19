@@ -40,8 +40,8 @@ These skills are directly applicable to **SOC Analyst** and **IT Administrator**
 - [x] Active Directory Domain Services installed  
 - [x] Server promoted to Domain Controller  
 - [x] Domain successfully configured  
-- [ ] Client joined to domain  
-- [ ] Users created via PowerShell  
+- [x] Client joined to domain  
+ 
 
 ---
 
@@ -110,22 +110,19 @@ Promoted the server to a Domain Controller and created a new domain.
 
 ---
 
-### Step 12 — Domain Controller Setup Complete ✅
+### Step 12 — Domain Controller Setup Complete 
 Successfully logged into the domain controller after full configuration.
 
 ![Step 12](https://github.com/HusseinCyberSec/Active-Directory-Home-Lab/blob/1ddec2ace37bda602f18d20d418546080908f8b8/Lab_Pictures/lab%2012.PNG)
 
----
+### Step 13 — Domain Controller Setup Complete 
+Join client to domain. Configured DNS to point to domain controller, join windows 11 machine to LAB.local. Verified successful domain login 
+![Step 13](https://github.com/HusseinCyberSec/Active-Directory-Home-Lab/blob/main/Lab_Pictures/lab%2015.PNG)
 
-## 🔜 Coming Next
-
-- Join Windows 11 client to the domain  
-- Create Organizational Units (OUs)  
-- Automate user creation with **PowerShell**  
-- Simulate enterprise user management  
-
----
-
+### Step 14 — Domain Controller Setup Complete 
+Create domain users and Groups 
+![Step 13](https://github.com/HusseinCyberSec/Active-Directory-Home-Lab/blob/main/Lab_Pictures/lab%2013.PNG)
+![Step 13](https://github.com/HusseinCyberSec/Active-Directory-Home-Lab/blob/main/Lab_Pictures/lab%2014.PNG)
 ## 🚀 Key Skills Demonstrated
 
 - Active Directory Domain Services (AD DS) deployment  
@@ -135,4 +132,6 @@ Successfully logged into the domain controller after full configuration.
 - Windows 11 & Server environment setup  
 - Enterprise infrastructure simulation  
 
----
+📌 Project Outcome
+
+This lab simulates a real-world enterprise environment where a domain controller centrally manages users, groups, and client machines. It demonstrates foundational IT and security skills used in help desk, system administration, and SOC roles.
