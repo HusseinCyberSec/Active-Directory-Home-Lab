@@ -121,8 +121,9 @@ Join client to domain. Configured DNS to point to domain controller, join window
 
 ### Step 14 — Domain Controller Setup Complete 
 Create domain users and Groups 
-![Step 13](https://github.com/HusseinCyberSec/Active-Directory-Home-Lab/blob/main/Lab_Pictures/lab%2013.PNG)
-![Step 13](https://github.com/HusseinCyberSec/Active-Directory-Home-Lab/blob/main/Lab_Pictures/lab%2014.PNG)
+![Step 14](https://github.com/HusseinCyberSec/Active-Directory-Home-Lab/blob/main/Lab_Pictures/lab%2013.PNG)
+![Step 14](https://github.com/HusseinCyberSec/Active-Directory-Home-Lab/blob/main/Lab_Pictures/lab%2014.PNG)
+![Step 14](https://github.com/HusseinCyberSec/Active-Directory-Home-Lab/blob/main/Lab_Pictures/lab%2016.PNG)
 ## 🚀 Key Skills Demonstrated
 
 - Active Directory Domain Services (AD DS) deployment  
